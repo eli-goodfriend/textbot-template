@@ -1,0 +1,14 @@
+application: bot
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /static
+  static_dir: static
+- url: /sendsms
+  script: bot.application
+  login: admin
+- url: /.*
+  script: bot.application

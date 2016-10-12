@@ -1,0 +1,3 @@
+queue:
+- name: sms
+  rate: 25/s
